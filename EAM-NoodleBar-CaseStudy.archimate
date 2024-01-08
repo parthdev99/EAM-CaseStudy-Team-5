@@ -72,19 +72,19 @@
     <element xsi:type="archimate:ApplicationFunction" name="Payment Processing" id="id-17fc804b5df34e9a84f085fbce83c2a8"/>
     <element xsi:type="archimate:ApplicationFunction" name="ID Validation" id="id-df76fe90e26a4f24a60283192c0847c5"/>
     <element xsi:type="archimate:ApplicationFunction" name="Price Determination" id="id-3a5b2b9321af4f85bf2bc8cf8398c788"/>
-    <element xsi:type="archimate:ApplicationService" name="Payment Service" id="id-cfbd4a0213414039be358889381074f7"/>
-    <element xsi:type="archimate:ApplicationService" name="Validation Service" id="id-320e3f668b054ff7acac2dc8f79435c6"/>
-    <element xsi:type="archimate:ApplicationService" name="Priniting Service" id="id-544a6d51f9884e4a98e87eacf687e730"/>
-    <element xsi:type="archimate:ApplicationService" name="Scanning service" id="id-9736eb2f18de4a1586e2fdb527507d43"/>
+    <element xsi:type="archimate:ApplicationService" name="Payment processing " id="id-cfbd4a0213414039be358889381074f7"/>
+    <element xsi:type="archimate:ApplicationService" name="Card Validating" id="id-320e3f668b054ff7acac2dc8f79435c6"/>
+    <element xsi:type="archimate:ApplicationService" name="Recipt Priniting" id="id-544a6d51f9884e4a98e87eacf687e730"/>
+    <element xsi:type="archimate:ApplicationService" name="Card Scanning" id="id-9736eb2f18de4a1586e2fdb527507d43"/>
     <element xsi:type="archimate:ApplicationComponent" name="CAmpus INC BAckend" id="id-d8d3d475b8e34ff4be6155ca4bad25db"/>
     <element xsi:type="archimate:ApplicationInterface" name="Rest Services" id="id-dd277cc002414f4e916110fe65b7d7f7"/>
-    <element xsi:type="archimate:ApplicationService" name="Display Services" id="id-9f8746af91da4d19977e6feec11b9678"/>
+    <element xsi:type="archimate:ApplicationService" name="UI Displaying" id="id-9f8746af91da4d19977e6feec11b9678"/>
     <element xsi:type="archimate:ApplicationComponent" name="Self Checkout Counter" id="id-409c8327250e4b2a80bbf42db611a193"/>
     <element xsi:type="archimate:ApplicationProcess" name="Payment Calculation" id="id-b10812eba75f46ecbfbce5263e01efd7"/>
-    <element xsi:type="archimate:ApplicationService" name="Weighing Service" id="id-18d26078698e467b8b12c6ffc37329f5"/>
+    <element xsi:type="archimate:ApplicationService" name="Plate Weighing" id="id-18d26078698e467b8b12c6ffc37329f5"/>
     <element xsi:type="archimate:ApplicationComponent" name="Smart Scale" id="id-2c523640d4ae461c93514d099dbb5d72"/>
     <element xsi:type="archimate:ApplicationProcess" name="Price Determination" id="id-6e94c6cc4ed94ee587f22c090afab626"/>
-    <element xsi:type="archimate:ApplicationFunction" name="Calculate weight" id="id-b8727314d3254e34a20982bef586d51b"/>
+    <element xsi:type="archimate:ApplicationFunction" name="Weight Calculating" id="id-b8727314d3254e34a20982bef586d51b"/>
     <element xsi:type="archimate:ApplicationProcess" name="Determine Price" id="id-4f3e27b6badd40b88b8b9776abf1806b"/>
     <element xsi:type="archimate:ApplicationProcess" name="Apply Discount" id="id-3c3f3c29ae004b54bfd92a3ae4f87ef1"/>
     <element xsi:type="archimate:ApplicationProcess" name="Validate ID" id="id-33905fc72c2846148b88f69019ee6699"/>
@@ -93,7 +93,7 @@
     <element xsi:type="archimate:ApplicationEvent" name="ID Invalid" id="id-ca98bacf486e410cbf8ca7501bbe61aa"/>
     <element xsi:type="archimate:ApplicationProcess" name="Payment processing" id="id-ae1be58d17a1464fa56757b5afd09d66"/>
     <element xsi:type="archimate:ApplicationProcess" name="Display Message" id="id-0622646748084ea98e032bcab5bcf899"/>
-    <element xsi:type="archimate:ApplicationProcess" name="Diplay Price" id="id-ef0513bfc7754dbd99557c6dd65ecd84"/>
+    <element xsi:type="archimate:ApplicationProcess" name="Display Price" id="id-ef0513bfc7754dbd99557c6dd65ecd84"/>
     <element xsi:type="archimate:ApplicationProcess" name="Request user Confirmation" id="id-377dd7870bc64a0d80c4c3bf7b91bac6"/>
     <element xsi:type="archimate:ApplicationEvent" id="id-c9a7114e55f1449c82ce83837cd2d7f4"/>
     <element xsi:type="archimate:ApplicationEvent" name="User confirmation recieved " id="id-dbd42ff11e334a9e8be551167620c2f3"/>
@@ -290,6 +290,7 @@
     <element xsi:type="archimate:RealizationRelationship" id="id-64b64b348851417bb14ab6d2a896e6ac" source="id-d8d3d475b8e34ff4be6155ca4bad25db" target="id-5207a457c3994951ac8071d58d31d207"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-cac2444d45c94cf38855f9634bdff1db" source="id-d8d3d475b8e34ff4be6155ca4bad25db" target="id-4bdc26a00784455ca80ce428c96132c1"/>
     <element xsi:type="archimate:AssignmentRelationship" id="id-99e8c706a1c0472fa57d95524c0b4b22" source="id-d8d3d475b8e34ff4be6155ca4bad25db" target="id-ee30026539f448f38165874b9e38f4a9"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-5b746eca82ce4c37aa8b22114cbcb3a5" source="id-cfbd4a0213414039be358889381074f7" target="id-65eeffba7bbd4be7834d796ec1d2c19d"/>
   </folder>
   <folder name="Views" id="id-797c1d5da7204423bce3ad42a3e245ba" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-9dface1769fd4dc3bb940c4043b32a29">
@@ -313,7 +314,7 @@
           <bounds x="1224" y="152" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-705fce901b2c4b8a9a1eb23f810476c7" source="id-ee5f10df19fe424e8ec485b067290e8e" target="id-186934f2d4e54cbfa51836ddea1395b0" archimateRelationship="id-76a04c7fd2f94effa321c1d7ac9be4a1"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-9d10c5ee84e047e9aa61fc2e1b466ac3" targetConnections="id-82e40af2f15e49898baaa0e72ee54cd8 id-c5756da9da3c45bf8a42e7f945346a48" archimateElement="id-65eeffba7bbd4be7834d796ec1d2c19d">
+        <child xsi:type="archimate:DiagramObject" id="id-9d10c5ee84e047e9aa61fc2e1b466ac3" targetConnections="id-82e40af2f15e49898baaa0e72ee54cd8 id-c5756da9da3c45bf8a42e7f945346a48 id-23e805504d284df199a2eb30cba09f07" archimateElement="id-65eeffba7bbd4be7834d796ec1d2c19d">
           <bounds x="624" y="152" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-9623bf5f8ac1406c821960a48bf93349" source="id-9d10c5ee84e047e9aa61fc2e1b466ac3" target="id-a8b9bcec105d4370b8cef94226dbff9e" archimateRelationship="id-4adb0f9ac53e4a62a3ede51417ba922f"/>
         </child>
@@ -565,9 +566,10 @@
         <child xsi:type="archimate:DiagramObject" id="id-e58e0d85152346d692fcd1240c9cb261" targetConnections="id-7123c3bc4fbc4f8ab54152b1690834ee" archimateElement="id-cfbd4a0213414039be358889381074f7">
           <bounds x="216" y="60" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-9db0b46cb4a449e78ee92489974febce" source="id-e58e0d85152346d692fcd1240c9cb261" target="id-c6c63457432746d8870cb18ba0bdcc22" archimateRelationship="id-be2ea7dd92e44840b361572db7abf1f1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-23e805504d284df199a2eb30cba09f07" source="id-e58e0d85152346d692fcd1240c9cb261" target="id-9d10c5ee84e047e9aa61fc2e1b466ac3" archimateRelationship="id-5b746eca82ce4c37aa8b22114cbcb3a5"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-85dcf4cf1c254aa19b4db1aea07a9e9d" targetConnections="id-bd79637f4eb94e9da3448fef234efaa0" archimateElement="id-18d26078698e467b8b12c6ffc37329f5">
-          <bounds x="36" y="60" width="120" height="55"/>
+          <bounds x="36" y="48" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-c3f3bbd8a1eb4477963402eb6a572fe8" source="id-85dcf4cf1c254aa19b4db1aea07a9e9d" target="id-cb5e7b67d109400fb643e906735ced26" archimateRelationship="id-6a2a11b0511e4cb38d2710e8611d91d0"/>
         </child>
       </child>
